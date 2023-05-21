@@ -34,6 +34,10 @@ body {
     }
 }
 
+.result_images img {
+    width: 100px;
+}
+
 .result_images {
     display: flex;
     column-gap: 7rem;
@@ -44,6 +48,18 @@ body {
     .result_images {
         column-gap: 50px;
     }
+}
+
+.result {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+
+.option_image img {
+    width: 50px;
+    margin: 20px;
+
 }
 
 .restart_button {
