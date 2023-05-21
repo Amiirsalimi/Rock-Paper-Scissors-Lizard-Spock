@@ -53,8 +53,8 @@ optionImages.forEach((image, index) => {
             userResult.src = imageSrc;
 
             // changing the defualt image for the lizard result.
-            if (userResult.src.includes("lizardHtml.png")) {
-                userResult.src = "images/lizard.png";
+            if (userResult.src.includes("assets/images/lizardHtml.png")) {
+                userResult.src = "assets/images/lizard.png";
             }
 
             // Generate a random number between 0 and 5 for the cpu value to choose an object.
@@ -94,7 +94,7 @@ optionImages.forEach((image, index) => {
                 // hiding the restart botton - if not included next round the restart button wont disappear.
                 restart_button.style.display = "none";
                 // Display the result
-                result.textContent = outComeValue === 0 ? "tie" : `You: ${userWin}   computer: ${cpuWin}`;
+                result.textContent = outComeValue === 0 ? "tie" : `You: ${userWin}   Computer: ${cpuWin}`;
 
             }
         }, 1000);
