@@ -10,3 +10,18 @@ const gameContainer = document.querySelector(".container"),
     optionImages = document.querySelectorAll(".option_image"),
     // an array for restart button - with this we could change the visibility when needed
     restart_button = document.querySelector(".restart_button");
+
+// hiding restart button.
+restart_button.style.display = "none";
+
+// adding two arrays to count how much user or computer won.
+var userWin = cpuWin = 0;
+
+// Loop through each option image element
+optionImages.forEach((image, index) => {
+    image.addEventListener("click", (e) => {
+        // stopping the loop if one score is 3 before going through the loop
+
+        if ((userWin > 2) || (cpuWin > 2)) {
+            return;
+        }
