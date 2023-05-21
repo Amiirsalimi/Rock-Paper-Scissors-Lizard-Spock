@@ -85,7 +85,7 @@ optionImages.forEach((image, index) => {
             if ((userWin > 2) || (cpuWin > 2)) {
 
                 // showing result if score is 3.
-                result.textContent = userWin > cpuWin ? "congragolation you won." : "sorry you lost.";
+                result.textContent = userWin > cpuWin ? "Congratulations, you've won." : "Sorry, you've lost.";
 
                 // showing restart button
                 restart_button.style.display = "";
