@@ -94,7 +94,7 @@ optionImages.forEach((image, index) => {
                 // hiding the restart botton - if not included next round the restart button wont disappear.
                 restart_button.style.display = "none";
                 // Display the result
-                result.textContent = outComeValue === 0 ? "tie" : `You: ${userWin}   Computer: ${cpuWin}`;
+                result.textContent = outComeValue === 0 ? "Tie" : `You: ${userWin}   Computer: ${cpuWin}`;
 
             }
         }, 1000);
