@@ -51,7 +51,7 @@ text-decoration: none;
     border-bottom: 3px dotted black;
 }
 
-.active {
+.used {
     border-bottom: 3px solid black;
 }
 
