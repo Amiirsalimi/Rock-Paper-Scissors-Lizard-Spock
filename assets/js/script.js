@@ -11,6 +11,7 @@ const gameContainer = document.querySelector(".container"),
     // an array for restart button - with this we could change the visibility when needed
     restart_button = document.querySelector(".restart_button");
 
+
 // hiding restart button.
 restart_button.style.display = "none";
 
@@ -25,6 +26,7 @@ optionImages.forEach((image, index) => {
         if ((userWin > 2) || (cpuWin > 2)) {
             return;
         }
+
 
         image.classList.add("active");
         userResult.src = "images/rock.png";
@@ -46,6 +48,7 @@ optionImages.forEach((image, index) => {
 
             // Get the source of the clicked option image
             let imageSrc = e.target.querySelector("img").src;
+
             // Set the user image to the clicked option image
             userResult.src = imageSrc;
 
@@ -78,6 +81,7 @@ optionImages.forEach((image, index) => {
             } else {
                 cpuWin += 1;
             }
+
             if ((userWin > 2) || (cpuWin > 2)) {
 
                 // showing result if score is 3.
@@ -93,6 +97,15 @@ optionImages.forEach((image, index) => {
                 result.textContent = outComeValue === 0 ? "tie" : `You: ${userWin}   computer: ${cpuWin}`;
 
             }
-        });
+        }, 1000);
     });
+});
+
+// When the restart button gets clicked, set the user and CPU score to 0.
+// This way, the if statement will allow to play again.
+restart_button.addEventListener("click", () => {
+    userWin = cpuWin = 0;
+    result.textContent = '';
+    restart_button.style.display = "none";
+
 });
