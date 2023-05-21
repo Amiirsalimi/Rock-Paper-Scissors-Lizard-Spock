@@ -228,14 +228,14 @@ hr {
 .tutor {
     width: 100%;
     position: relative;
-    top: 30%;
+    top: 35%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .pic {
-    width: 60%;
+    width: 50%;
     
 }
 
