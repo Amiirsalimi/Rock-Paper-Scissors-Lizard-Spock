@@ -29,8 +29,8 @@ optionImages.forEach((image, index) => {
 
 
         image.classList.add("active");
-        userResult.src = "images/rock.png";
-        cpuResult.src = "images/rock.png";
+        userResult.src = "assets/images/rock.png";
+        cpuResult.src = "assets/images/rock.png";
         result.textContent = "HOLD ON";
 
         // Loop through each option image again
@@ -61,7 +61,7 @@ optionImages.forEach((image, index) => {
             let randomNumber = Math.floor(Math.random() * 5);
 
             // Create an array of CPU image options
-            let cpuImages = ["images/rock.png", "images/paper.png", "images/scissors.png", "images/spock.png", "images/lizard.png"];
+            let cpuImages = ["assets/images/rock.png", "assets/images/paper.png", "assets/images/scissors.png", "assets/images/spock.png", "assets/images/lizard.png"];
 
             // choosing a random option (rock,paper ...) from the array for computer
             cpuResult.src = cpuImages[randomNumber];
