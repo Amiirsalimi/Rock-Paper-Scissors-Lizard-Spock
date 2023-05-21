@@ -43,6 +43,18 @@ body {
     margin-right: 10%;
 }
 
+.menu a {
+text-decoration: none;
+}
+
+.menu a:hover {
+    border-bottom: 3px dotted black;
+}
+
+.active {
+    border-bottom: 3px solid black;
+}
+
 hr {
     width: 50%;
     border-style: dashed;
