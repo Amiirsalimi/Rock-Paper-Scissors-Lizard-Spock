@@ -52,4 +52,47 @@ optionImages.forEach((image, index) => {
             // changing the defualt image for the lizard result.
             if (userResult.src.includes("lizardHtml.png")) {
                 userResult.src = "images/lizard.png";
-            };
+            }
+
+            // Generate a random number between 0 and 5 for the cpu value to choose an object.
+            let randomNumber = Math.floor(Math.random() * 5);
+
+            // Create an array of CPU image options
+            let cpuImages = ["images/rock.png", "images/paper.png", "images/scissors.png", "images/spock.png", "images/lizard.png"];
+
+            // choosing a random option (rock,paper ...) from the array for computer
+            cpuResult.src = cpuImages[randomNumber];
+
+            // Assign a number value to the clicked option (based on index) 
+            let userValue = [0, 1, 2, 3, 4][index];
+
+            // **algorithm to find the winner**
+            // make a simple argument to check for the result
+            let compare = userValue - randomNumber + 5;
+
+            // check the result
+            if (compare % 5 == 0) {
+                var outComeValue = 0;
+            } else if ((compare % 5 + 1) % 2 == 0) {
+                userWin += 1;
+            } else {
+                cpuWin += 1;
+            }
+            if ((userWin > 2) || (cpuWin > 2)) {
+
+                // showing result if score is 3.
+                result.textContent = userWin > cpuWin ? "congragolation you won." : "sorry you lost.";
+
+                // showing restart button
+                restart_button.style.display = "";
+            } else {
+
+                // hiding the restart botton - if not included next round the restart button wont disappear.
+                restart_button.style.display = "none";
+                // Display the result
+                result.textContent = outComeValue === 0 ? "tie" : `You: ${userWin}   computer: ${cpuWin}`;
+
+            }
+        });
+    });
+});
