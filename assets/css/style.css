@@ -213,3 +213,49 @@ hr {
     cursor: pointer;
 
 }
+
+.guide {
+    width: 60%;
+    display: block;
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    font-size: 24px;
+}
+
+
+
+.tutor {
+    width: 100%;
+    position: relative;
+    top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic {
+    width: 60%;
+    
+}
+
+@media (max-width: 700px) {
+    .guide {
+        
+        font-size: 14px;
+        
+    }
+    .tutor {
+        top: 20%;
+    }
+
+    .pic {
+        width: 80%;
+    }
+}
+
+@media (max-width: 350px) {
+    .tutor {
+        top: 35%;
+    }
+}
