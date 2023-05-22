@@ -6,7 +6,7 @@ This project has been done as my second portfolio project at Code Institue. Java
 The link to the website can be found below:
 https://amiirsalimi.github.io/Rock-Paper-Scissors-Lizard-Spock/
 
-<img src=screenshots/mockup.jpg>
+<img src=assets/screenshots/mockup.jpg>
 
 # User Experience
 ## Owner goals
