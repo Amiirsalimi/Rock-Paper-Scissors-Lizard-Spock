@@ -15,14 +15,20 @@ My main purpose of creating this website was to get my project done and present 
 The user may enter the website to play the game against computer in order to be enterntained. They can learn about the logic of the game through the learn page as well.
 
 # How the game works:
+
 •	Each object wins against 2 and loses against other 2.
+
 •	Rock smashes scissors and crushes lizard.
+
 •	Paper covers rock and disproves Spock.
+
 •	Scissors cuts paper and decapitates lizard.
+
 •	Lizard eats paper and poisons Spock.
+
 •	Spock smashes scissors and vaporizes rock.
 
-Whomever between the user and computer wins 3 round first is the winner.
+Whomever between the user and the computer wins 3 round first is the winner.
 
 # How to find the winner through an algorthm:
 
