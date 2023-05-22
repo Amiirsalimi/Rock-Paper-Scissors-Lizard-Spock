@@ -47,11 +47,12 @@ For example, if user chose lizard (4) and computer chose scissors (3),
 
 # Features and Structure of the Website
 The website consists of 2 pages including : "Play" and "Learn"
+
 ## Play
 At the top of the page, there is a navigation bar which lets the user navigate through the two pages of the website. Then in a container below the user can play the game and choose an option among the 5 choices they have which includes 
 
 
-<img src=screenshots/sc-home.jpg>
+<img src=screenshots/play.jpg>
 
 ## Learn
 At the top we have the same navigation bar as the homepage.
@@ -59,7 +60,7 @@ Then there is the banner containing another photo of me as well as my name, emai
 Then we have the CV presented through paragraphs and lists indicating my education and experience as well as my skills. At the bottom of the resume there is a link to a pdf file containing my resume.
 Then we have the footer. However, on this page footer is fixed so that while the user is scrolling through my resume can immdediately open the links to my social media accounts.
 
-<img src=screenshots/sc-resume.jpg>
+<img src=screenshots/learn.jpg>
 
 
 # User Interface
@@ -158,6 +159,12 @@ and of course, the materials that I studied on Code Institute LMS and some point
 
 # Screenshots
 
+<img src=screenshots/1.jpg>
+<img src=screenshots/2.jpg>
+<img src=screenshots/3.jpg>
+<img src=screenshots/4.jpg>
+<img src=screenshots/5.jpg>
+<img src=screenshots/6.jpg>
 
 
 
