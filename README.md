@@ -14,15 +14,40 @@ My main purpose of creating this website was to get my project done and present 
 ## User goals
 The user may enter the website to play the game against computer in order to be enterntained. They can learn about the logic of the game through the learn page as well.
 
+# How the game works:
+•	Each object wins against 2 and loses against other 2.
+•	Rock smashes scissors and crushes lizard.
+•	Paper covers rock and disproves Spock.
+•	Scissors cuts paper and decapitates lizard.
+•	Lizard eats paper and poisons Spock.
+•	Spock smashes scissors and vaporizes rock.
+
+Whomever between the user and computer wins 3 round first is the winner.
+
+# How to find the winner through an algorthm:
+
+To find the winner, the first idea that comes to mind is to use a simple if statement and simply declare who won like this:
+If userResult is “rock” and cpuResult is paper, then cpu won, and so on and so forth.
+The second solution that comes to mind is to use math in the process:
+We assign a number for each object.
+Rock is 0, paper is 1, scissors is 2, lizard is 3 and Spock is 4.
+Then by using mod5,
+Simply by dividing user value and computer value and finding the remainder of that number by 5, you can declare if the user won or computer. 
+If you do this a few times, you’ll understand that if computer wins, the value of it is always even, and if user wins, the value is always odd.
+For example, if user chose lizard (4) and computer chose scissors (3),
+(4-3) mod 5 = 4 : the result is even, so the computer won.
+
+
+
 # Features and Structure of the Website
 The website consists of 2 pages including : "Play" and "Learn"
-## Home
+## Play
 At the top of the page, there is a navigation bar which lets the user navigate through the two pages of the website. Then in a container below the user can play the game and choose an option among the 5 choices they have which includes 
 
 
 <img src=screenshots/sc-home.jpg>
 
-## Resume
+## Learn
 At the top we have the same navigation bar as the homepage.
 Then there is the banner containing another photo of me as well as my name, email and job title on the right hand side of the photo. It is worth mentioning that the structure of the page is slightly different on devices less than 600px wide, given that the photo was a square and I put the name and email and job title below the photo on those devices. The photo loads with an apearing animation using opacity of the photo.
 Then we have the CV presented through paragraphs and lists indicating my education and experience as well as my skills. At the bottom of the resume there is a link to a pdf file containing my resume.
@@ -30,12 +55,6 @@ Then we have the footer. However, on this page footer is fixed so that while the
 
 <img src=screenshots/sc-resume.jpg>
 
-## Contact me
-At the top we have the same navigation bar.
-Then there is a form containing inputs for name, subject, email and message as well as the send button and a reset button. The user can contact the owner though this form.
-On the right, there is the email address of the owner as well as links to social media through icons and a link to the pdf file containing the resume. 
-
-<img src=screenshots/sc-contact.jpg>
 
 # User Interface
 
