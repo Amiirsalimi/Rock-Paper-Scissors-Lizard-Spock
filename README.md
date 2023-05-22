@@ -55,10 +55,8 @@ At the top of the page, there is a navigation bar which lets the user navigate t
 <img src=screenshots/play.jpg>
 
 ## Learn
-At the top we have the same navigation bar as the homepage.
-Then there is the banner containing another photo of me as well as my name, email and job title on the right hand side of the photo. It is worth mentioning that the structure of the page is slightly different on devices less than 600px wide, given that the photo was a square and I put the name and email and job title below the photo on those devices. The photo loads with an apearing animation using opacity of the photo.
-Then we have the CV presented through paragraphs and lists indicating my education and experience as well as my skills. At the bottom of the resume there is a link to a pdf file containing my resume.
-Then we have the footer. However, on this page footer is fixed so that while the user is scrolling through my resume can immdediately open the links to my social media accounts.
+At the top we have the same navigation bar as the play page.
+Then there is a header with the title of the game and below it there is a paragraph which quotes "Sheldon Cooper" the famous charachter of the sitcom series "Big Bang Theory" in which he explains how the game works. Then, there is image consisting of the relation between each element of the game.
 
 <img src=screenshots/learn.jpg>
 
